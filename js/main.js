@@ -20,8 +20,15 @@ let i = 0;
 
 // Ciclo 'while' che continua finché l'indice 'i' è minore della lunghezza dell'array 'shoppingList'
 while (i < shoppingList.length) { 
-  const li = document.createElement('li') // Crea un nuovo elemento <li>
-  li.textContent = shoppingList[i] // Imposta il testo dell'elemento <li> corrente con l'elemento dell'array 'shoppingList' corrispondente
-  ul.appendChild(li) // Aggiungi l'elemento <li> alla lista <ul>
-  i++ // Incrementa l'indice 'i'
+  // Crea un nuovo elemento <li>
+  const li = document.createElement('li')
+  
+  // Imposto il testo dell'elemento <li> corrente con l'elemento dell'array 'shoppingList'
+  li.textContent = shoppingList[i]
+
+  // Aggiungo l'elemento <li> alla lista <ul>
+  ul.appendChild(li) 
+
+  /* Incremento l'indice 'i' */
+  i++ 
 }
